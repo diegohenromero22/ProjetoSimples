@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Meu modelo de curriculo</title>
+	<link rel="stylesheet" href="w3-container.css">
+		<script>
+		function cont(){
+		   var  conteudo = document.getElementById('print').innerHTML;
+		   tela_impressao = window.open('about:blank');
+		   tela_impressao.document.write(conteudo);
+		   tela_impressao.window.print();
+		   tela_impressao.window.close();
+	  }
+
+
+	</script>
+	<style type="text/css">
+	p{
+            text-transform: uppercase;
+            text-align: center;
+            width: 300px;
+            font-size: 22px;
+            font-family: verdana;
+        }	
+	.formulario {
+	    padding: 20px;
+	    width: 400px
+	    height: 700px;
+	    border: 1px solid #000000;
+	}
+
+	.formulario input {
+	    width: 35%;
+	    height: 10px;
+	    display: block;
+	}
+
+	form input {
+	    padding: 10px;
+	    margin: 10px 0;
+	    width: 700px;
+	}
+
+	form label {
+		font-style: !important;
+		font: "Arial";
+	    font-size: 30px;
+	    margin-left: 2px
+
+    }
+    
+div{
+  display: block;
+  width: 800px;
+  height: 900px
+  margin: 120px 0;
+  text-align: left;
+  text-size-adjust: 10px;
+}
+	</style>
+
+</head>
+<body>	
+		
+		<div  id="print" class="conteudo">
+			
+		    <fieldset id="print" class="conteudo">
+		    <form class=".formulario">
+
+		    	<h1 align="center"> Ficha de Cadastro - Acompanhamento de Resultados</h1>
+
+				<label for="frmNome" class="form label" class=".form">Nome: </label><br><br>
+				<input class= "form input" type="text" id="frmNome" name="frmNome"> <br><br>
+
+				<label for="tel">Telefone</label> <br><br>
+                <input type="tel" id="tel"> <br><br>
+
+				<label for="frmEnd">Endereco: </label><br><br>
+				<input type="text" id="frmEnd" name="frmEnd"> <br><br>
+		
+				<label for="frmNrmCasa">Numero: </label><br><br>
+				<input type="text" id="frmNrmCasa" name="frmNrmCasa"> <br><br>
+
+				<label for="frmBairro">Bairro: </label><br><br>
+				<input type="text" id="frmBairro" name="frmBairro"> <br><br>
+
+				<label for="frmCidade">Cidade: </label><br><br>
+				<input type="text" id="frmCidade" name="frmCidade"> <br><br>
+
+				<label for="frmEstado">Estado: </label><br><br>
+				<input type="text" id="frmEstado" name="frmEstado"> <br><br>
+ 
+ 	 			<label for="frmObjetvo" margin-left: 2px>Descreva qual foi o resultado: </label>
+				<textarea cols="95" rows="15"></textarea><br><br>
+			    <br><br><br>
+
+				<input type="button" id="print" class="conteudo" onclick="cont();" value="Imprimir Div separadamente"><br><br>			
+			</form>
+			</fieldset>
+			
+				
+        </div>
+					
+		 
+ <form>
+           
+
+</body>
+</html>
